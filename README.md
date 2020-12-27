@@ -1,8 +1,6 @@
 # React Facebook Photo Grid Example , Creates Grid Posts like Facebook
 
-# React Facebook Photo Grid , Creates Grid Posts like Facebook
-
-This component shows images in a neat square (or whatever dimensions you want) grid. Acts like facebooks image grids. Switches between several modes according to number of photos provided
+This React component shows images in a neat square (or whatever dimensions you want) grid. Acts like facebooks image grids. Switches between several modes according to number of photos provided
 
 You just need to pass any number of images to the component and rest will be taken care of.
 
