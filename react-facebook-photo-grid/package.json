@@ -1,12 +1,16 @@
 {
   "name": "react-facebook-photo-grid",
-  "version": "1.0.2",
+  "version": "1.0.5",
   "description": "A npm react package to display picture and photo posts in grids like facebook does",
   "main": "./dist/index.js",
   "scripts": {
     "prepublish": "npm run build",
     "build": "babel src --out-dir dist --presets=@babel/preset-env,@babel/preset-react",
     "watcher": "webpack --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UmairMukhtar/react-facebook-photo-grid.git"
   },
   "keywords": [
     "react-photo-grid",

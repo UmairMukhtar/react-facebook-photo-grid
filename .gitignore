@@ -5,6 +5,8 @@
 /.pnp
 .pnp.js
 
+/react-facebook-photo-grid/node_modules/
+
 # testing
 /coverage
 

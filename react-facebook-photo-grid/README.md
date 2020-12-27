@@ -1,4 +1,4 @@
-# Reactjs Component for Facebook like photo/image grids supporting any number of images
+# React Facebook Photo Grid , Creates Grid Posts like Facebook
 
 This component shows images in a neat square (or whatever dimensions you want) grid. Acts like facebooks image grids. Switches between several modes according to number of photos provided
 
@@ -26,6 +26,28 @@ import Photogrid from "react-facebook-photo-grid";
 ```
 
 You dont need to worry about anything , the photo grid will automatically adjust according to the size of container , or if you want you can pass optional props width and maxWidth
+
+<strong>Two Picture Grid</strong>
+<br/>
+<img src="https://github.com/UmairMukhtar/react-facebook-photo-grid/blob/main/examplesPics/TwoPics.PNG"></img>
+<strong>Three Picture Grid</strong>
+<br/>
+<img src="https://github.com/UmairMukhtar/react-facebook-photo-grid/blob/main/examplesPics/ThreePics.PNG"></img>
+<strong>Four Picture Grid</strong>
+<br/>
+<img src="https://github.com/UmairMukhtar/react-facebook-photo-grid/blob/main/examplesPics/FourPics.PNG"></img>
+<strong>Five Picture Grid</strong>
+<br/>
+<img src="https://github.com/UmairMukhtar/react-facebook-photo-grid/blob/main/examplesPics/FivePics.PNG"></img>
+<strong>More Than Five Pictures Grid</strong>
+<br/>
+<img src="https://github.com/UmairMukhtar/react-facebook-photo-grid/blob/main/examplesPics/MorePics.PNG"></img>
+
+<strong>We also allow limited support for video, currently only one video along with many pictures</strong>
+
+<strong>One Video On Picture</strong>
+<br/>
+<img src="https://github.com/UmairMukhtar/react-facebook-photo-grid/blob/main/examplesPics/OnePicOneVideo.PNG"></img>
 
 Kindly let us know how we can imporove this package
 
