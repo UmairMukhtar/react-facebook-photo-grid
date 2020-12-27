@@ -13,6 +13,8 @@ You just need to pass any number of images to the component and rest will be tak
 #Usages
 
 ```JavaScript
+  npm install react-facebook-photo-grid
+
   const data =[Image1, Image2, Image3, Image4, Image1, Image2],
 
 
