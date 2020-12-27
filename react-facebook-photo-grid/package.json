@@ -1,0 +1,39 @@
+{
+  "name": "react-facebook-photo-grid",
+  "version": "1.0.2",
+  "description": "A npm react package to display picture and photo posts in grids like facebook does",
+  "main": "./dist/index.js",
+  "scripts": {
+    "prepublish": "npm run build",
+    "build": "babel src --out-dir dist --presets=@babel/preset-env,@babel/preset-react",
+    "watcher": "webpack --watch"
+  },
+  "keywords": [
+    "react-photo-grid",
+    "react-facebook-post",
+    "react-facebook-photo-grid",
+    "react-image-grid",
+    "react-fb-image-grid"
+  ],
+  "externals": {
+    "react": "react"
+  },
+  "dependencies": {
+    "@material-ui/core": "^4.11.0",
+    "@material-ui/icons": "^4.9.1",
+    "infinite-react-carousel": "^1.2.11"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.3",
+    "@babel/core": "^7.8.3",
+    "@babel/preset-env": "^7.8.3",
+    "@babel/preset-react": "^7.8.3",
+    "@babel/runtime": "^7.8.3",
+    "babel-loader": "^8.0.6",
+    "prop-types": "^15.4.1",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10"
+  },
+  "author": "Umair Mukhtar",
+  "license": "ISC"
+}
