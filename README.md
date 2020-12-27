@@ -29,27 +29,33 @@ import Photogrid from "react-facebook-photo-grid";
 
 You dont need to worry about anything , the photo grid will automatically adjust according to the size of container , or if you want you can pass optional props width and maxWidth
 
+<br/>
 <strong>Two Picture Grid</strong>
 <br/>
 <img src="https://github.com/UmairMukhtar/react-facebook-photo-grid/blob/main/examplesPics/TwoPics.PNG"></img>
+<br/>
 <strong>Three Picture Grid</strong>
 <br/>
 <img src="https://github.com/UmairMukhtar/react-facebook-photo-grid/blob/main/examplesPics/ThreePics.PNG"></img>
+<br/>
 <strong>Four Picture Grid</strong>
 <br/>
 <img src="https://github.com/UmairMukhtar/react-facebook-photo-grid/blob/main/examplesPics/FourPics.PNG"></img>
+<br/>
 <strong>Five Picture Grid</strong>
 <br/>
 <img src="https://github.com/UmairMukhtar/react-facebook-photo-grid/blob/main/examplesPics/FivePics.PNG"></img>
+<br/>
 <strong>More Than Five Pictures Grid</strong>
 <br/>
 <img src="https://github.com/UmairMukhtar/react-facebook-photo-grid/blob/main/examplesPics/MorePics.PNG"></img>
-
+<br/>
 <strong>We also allow limited support for video, currently only one video along with many pictures</strong>
-
+<br/>
 <strong>One Video On Picture</strong>
 <br/>
 <img src="https://github.com/UmairMukhtar/react-facebook-photo-grid/blob/main/examplesPics/OnePicOneVideo.PNG"></img>
+<br/>
 
 Kindly let us know how we can imporove this package
 
