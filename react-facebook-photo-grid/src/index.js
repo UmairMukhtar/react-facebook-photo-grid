@@ -376,7 +376,7 @@ export default function PictureGrid(props) {
                               justify="center"
                               alignItems="center"
                               style={{
-                                // backgroundImage: `url(${image}`,
+                                backgroundImage: `url(${image}`,
                                 background: "gray",
                                 width: "auto",
                                 height: 195,

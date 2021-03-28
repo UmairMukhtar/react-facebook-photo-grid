@@ -1,5 +1,6 @@
 import "./App.css";
-import Photogrid from "react-facebook-photo-grid";
+// import Photogrid from "react-facebook-photo-grid";
+import Photogrid from "./react-facebook-photo-grid";
 import Image1 from "./assests/waffle.jpg";
 import Image2 from "./assests/waffle1.jpg";
 import Image3 from "./assests/waffle2.jpg";
