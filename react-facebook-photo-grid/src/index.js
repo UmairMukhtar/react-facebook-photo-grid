@@ -93,27 +93,32 @@ export default function PictureGrid(props) {
   };
 
   const isAVideo = (path) => {
-    if (path.includes(".mp4") || path.includes(".mov")) {
-      return true;
+    if (props.children === null) {
+      if (path.includes(".mp4") || path.includes(".mov")) {
+        return true;
+      }
     }
+
     return false;
   };
 
   const hasAVideo = (paths) => {
     var hasVideo = false;
-    paths.map((path) => {
-      if (path.includes(".mp4") || path.includes(".mov")) {
-        console.log("checking videos", path);
-        hasVideo = true;
-      }
-    });
+    if (props.children === null) {
+      paths.map((path) => {
+        if (path.includes(".mp4") || path.includes(".mov")) {
+          console.log("checking videos", path);
+          hasVideo = true;
+        }
+      });
+    }
 
     return hasVideo;
   };
 
   const displayImage = (images) => {
     if (images) {
-      // console.log("images", images);
+      console.log("images", images[0]);
       if (images.length === 1) {
         if (isAVideo(images[0])) {
           return (
