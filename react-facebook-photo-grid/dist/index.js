@@ -481,7 +481,7 @@ function PictureGrid(props) {
                   justify: "center",
                   alignItems: "center",
                   style: {
-                    // backgroundImage: `url(${image}`,
+                    backgroundImage: "url(".concat(image),
                     background: "gray",
                     width: "auto",
                     height: 195,

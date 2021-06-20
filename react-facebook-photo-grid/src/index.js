@@ -513,11 +513,11 @@ export default function PictureGrid(props) {
   return (
     <div style={{ width: props.width, maxWidth: props.maxWidth }}>
       {showGallaryView === false
-        ? displayImage(props.images) != null && (
-            <div>{displayImage(props.images)}</div>
+        ? displayImage(props.images || props.children) != null && (
+            <div>{displayImage(props.images || props.children)}</div>
           )
-        : displayGallaryImage(props.images) != null && (
-            <div>{displayGallaryImage(props.images)}</div>
+        : displayGallaryImage(props.images || props.children) != null && (
+            <div>{displayGallaryImage(props.images || props.children)}</div>
           )}
       {showImage && (
         <Dialog

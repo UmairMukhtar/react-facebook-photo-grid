@@ -1,6 +1,6 @@
 {
   "name": "react-facebook-photo-grid",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "A npm react package to display picture and photo posts in grids like facebook does",
   "main": "./dist/index.js",
   "scripts": {
