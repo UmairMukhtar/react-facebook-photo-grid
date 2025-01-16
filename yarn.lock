@@ -8282,6 +8282,18 @@ react-error-overlay@^6.0.11:
   resolved "https://registry.npmjs.org/react-error-overlay/-/react-error-overlay-6.0.11.tgz"
   integrity sha512-/6UZ2qgEyH2aqzYZgQPxEnz33NJ2gNsnHA2o5+o4wW9bLM/JYQitNP9xPhsXwC08hMMovfGe/8retsdDsczPRg==
 
+react-facebook-photo-grid@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/react-facebook-photo-grid/-/react-facebook-photo-grid-2.0.0.tgz#fc687bfc39c655ea05872b55812e0838d3f737df"
+  integrity sha512-S1v3buNcdlaTvH8h28Ne8uVQDKXmZooPILzYfb6FmZ+prbmoNpYxymzO+5euaeRJGq74P78fp7da00daDTrIfQ==
+  dependencies:
+    "@emotion/react" "^11.14.0"
+    "@emotion/styled" "^11.14.0"
+    "@mui/icons-material" "^6.4.0"
+    "@mui/material" "^6.4.0"
+    "@mui/styles" "^6.4.0"
+    infinite-react-carousel "^1.2.11"
+
 react-is@^16.13.1, react-is@^16.7.0:
   version "16.13.1"
   resolved "https://registry.npmjs.org/react-is/-/react-is-16.13.1.tgz"

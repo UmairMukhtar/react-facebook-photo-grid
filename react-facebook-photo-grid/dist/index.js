@@ -49,12 +49,7 @@ function PictureGrid(props) {
         }, images.map(image => {
           if (isAVideo(image)) {
             return /*#__PURE__*/_react.default.createElement(_Grid.default, {
-              item: true,
-              md: 12,
-              lg: 12,
-              xl: 12,
-              xs: 12,
-              sm: 12
+              size: 12
             }, /*#__PURE__*/_react.default.createElement(_Grid.default, {
               container: true,
               direction: "row",
@@ -68,12 +63,7 @@ function PictureGrid(props) {
             })));
           }
           return /*#__PURE__*/_react.default.createElement(_Grid.default, {
-            item: true,
-            md: 12,
-            lg: 12,
-            xl: 12,
-            xs: 12,
-            sm: 12
+            size: 12
           }, /*#__PURE__*/_react.default.createElement("div", {
             container: true,
             direction: "row",
@@ -100,28 +90,24 @@ function PictureGrid(props) {
     }
   };
   const isAVideo = path => {
-    if (props.children === null) {
-      if (path.includes(".mp4") || path.includes(".mov")) {
-        return true;
-      }
+    if (path.includes(".mp4") || path.includes(".mov")) {
+      return true;
     }
     return false;
   };
   const hasAVideo = paths => {
     var hasVideo = false;
-    if (props.children === null) {
-      paths.map(path => {
-        if (path.includes(".mp4") || path.includes(".mov")) {
-          console.log("checking videos", path);
-          hasVideo = true;
-        }
-      });
-    }
+    paths.map(path => {
+      if (path.includes(".mp4") || path.includes(".mov")) {
+        console.log("checking videos", path);
+        hasVideo = true;
+      }
+    });
     return hasVideo;
   };
   const displayImage = images => {
     if (images) {
-      console.log("images", images[0]);
+      // console.log("images", images);
       if (images.length === 1) {
         if (isAVideo(images[0])) {
           return /*#__PURE__*/_react.default.createElement(_Grid.default, {
@@ -160,12 +146,7 @@ function PictureGrid(props) {
           }, images.map((image, index) => {
             if (isAVideo(image)) {
               return /*#__PURE__*/_react.default.createElement(_Grid.default, {
-                item: true,
-                md: 12,
-                lg: 12,
-                xl: 12,
-                xs: 12,
-                sm: 12
+                size: 12
               }, /*#__PURE__*/_react.default.createElement(_Grid.default, {
                 container: true,
                 direction: "row",
@@ -178,12 +159,7 @@ function PictureGrid(props) {
               })));
             }
             return /*#__PURE__*/_react.default.createElement(_Grid.default, {
-              item: true,
-              md: 12,
-              lg: 12,
-              xl: 12,
-              xs: 12,
-              sm: 12
+              size: 12
             }, /*#__PURE__*/_react.default.createElement(_Grid.default, {
               container: true,
               direction: "row",
@@ -209,12 +185,7 @@ function PictureGrid(props) {
             spacing: 1
           }, images.map((image, index) => {
             return /*#__PURE__*/_react.default.createElement(_Grid.default, {
-              item: true,
-              md: 6,
-              lg: 6,
-              xl: 6,
-              xs: 6,
-              sm: 6
+              size: 6
             }, /*#__PURE__*/_react.default.createElement(_Grid.default, {
               container: true,
               direction: "row",
@@ -240,12 +211,7 @@ function PictureGrid(props) {
           container: true,
           spacing: 1
         }, /*#__PURE__*/_react.default.createElement(_Grid.default, {
-          item: true,
-          md: 6,
-          lg: 6,
-          xl: 6,
-          xs: 6,
-          sm: 6
+          size: 6
         }, /*#__PURE__*/_react.default.createElement(_Grid.default, {
           container: true,
           direction: "row",
@@ -263,22 +229,12 @@ function PictureGrid(props) {
             setShowImage(images[0]);
           }
         })), " ", /*#__PURE__*/_react.default.createElement(_Grid.default, {
-          item: true,
-          md: 6,
-          lg: 6,
-          xl: 6,
-          xs: 6,
-          sm: 6
+          size: 6
         }, images.map((image, index) => {
           if (index != 0) {
             if (isAVideo(image)) {
               return /*#__PURE__*/_react.default.createElement(_Grid.default, {
-                item: true,
-                md: 12,
-                lg: 12,
-                xl: 12,
-                xs: 12,
-                sm: 12
+                size: 12
               }, /*#__PURE__*/_react.default.createElement(_Grid.default, {
                 container: true,
                 direction: "row",
@@ -319,12 +275,7 @@ function PictureGrid(props) {
           container: true,
           spacing: 1
         }, /*#__PURE__*/_react.default.createElement(_Grid.default, {
-          item: true,
-          md: 6,
-          lg: 6,
-          xl: 6,
-          xs: 6,
-          sm: 6
+          size: 6
         }, /*#__PURE__*/_react.default.createElement(_Grid.default, {
           container: true,
           direction: "row",
@@ -342,22 +293,12 @@ function PictureGrid(props) {
             setShowImage(images[0]);
           }
         })), " ", /*#__PURE__*/_react.default.createElement(_Grid.default, {
-          item: true,
-          md: 6,
-          lg: 6,
-          xl: 6,
-          xs: 6,
-          sm: 6
+          size: 6
         }, images.map((image, index) => {
           if (index != 0) {
             if (isAVideo(image)) {
               return /*#__PURE__*/_react.default.createElement(_Grid.default, {
-                item: true,
-                md: 12,
-                lg: 12,
-                xl: 12,
-                xs: 12,
-                sm: 12
+                size: 12
               }, /*#__PURE__*/_react.default.createElement(_Grid.default, {
                 container: true,
                 direction: "row",
@@ -394,12 +335,7 @@ function PictureGrid(props) {
           container: true,
           spacing: 1
         }, /*#__PURE__*/_react.default.createElement(_Grid.default, {
-          item: true,
-          md: 6,
-          lg: 6,
-          xl: 6,
-          xs: 6,
-          sm: 6
+          size: 6
         }, /*#__PURE__*/_react.default.createElement(_Grid.default, {
           container: true,
           direction: "row",
@@ -417,12 +353,7 @@ function PictureGrid(props) {
             setShowImage(images[0]);
           }
         })), " ", /*#__PURE__*/_react.default.createElement(_Grid.default, {
-          item: true,
-          md: 6,
-          lg: 6,
-          xl: 6,
-          xs: 6,
-          sm: 6
+          size: 6
         }, /*#__PURE__*/_react.default.createElement(_Grid.default, {
           container: true,
           spacing: 1
@@ -431,12 +362,7 @@ function PictureGrid(props) {
             if (index > 3 && images.length > 5) {
               if (index === 4) {
                 return /*#__PURE__*/_react.default.createElement(_Grid.default, {
-                  item: true,
-                  md: 6,
-                  lg: 6,
-                  xl: 6,
-                  xs: 6,
-                  sm: 6
+                  size: 6
                 }, /*#__PURE__*/_react.default.createElement(_Grid.default, {
                   container: true,
                   direction: "row",
@@ -444,7 +370,7 @@ function PictureGrid(props) {
                   alignItems: "center",
                   style: {
                     backgroundImage: "url(".concat(image),
-                    background: "gray",
+                    // background: "gray",
                     width: "auto",
                     height: 195,
                     borderRadius: 5,
@@ -472,11 +398,7 @@ function PictureGrid(props) {
                   if (isAVideo(image)) {
                     return /*#__PURE__*/_react.default.createElement(_Grid.default, {
                       item: true,
-                      md: 12,
-                      lg: 12,
-                      xl: 12,
-                      xs: 12,
-                      sm: 12
+                      size: 12
                     }, /*#__PURE__*/_react.default.createElement(_Grid.default, {
                       container: true,
                       direction: "row",
@@ -489,12 +411,7 @@ function PictureGrid(props) {
                     })));
                   }
                   return /*#__PURE__*/_react.default.createElement(_Grid.default, {
-                    item: true,
-                    md: 12,
-                    lg: 12,
-                    xl: 12,
-                    xs: 12,
-                    sm: 12
+                    size: 12
                   }, /*#__PURE__*/_react.default.createElement(_Grid.default, {
                     container: true,
                     direction: "row",
@@ -515,12 +432,7 @@ function PictureGrid(props) {
                   }));
                 }
                 return /*#__PURE__*/_react.default.createElement(_Grid.default, {
-                  item: true,
-                  md: 6,
-                  lg: 6,
-                  xl: 6,
-                  xs: 6,
-                  sm: 6
+                  size: 6
                 }, /*#__PURE__*/_react.default.createElement(_Grid.default, {
                   container: true,
                   direction: "row",
@@ -541,12 +453,7 @@ function PictureGrid(props) {
                 }));
               } else {
                 return /*#__PURE__*/_react.default.createElement(_Grid.default, {
-                  item: true,
-                  md: 6,
-                  lg: 6,
-                  xl: 6,
-                  xs: 6,
-                  sm: 6
+                  size: 6
                 }, /*#__PURE__*/_react.default.createElement(_Grid.default, {
                   container: true,
                   direction: "row",
@@ -577,7 +484,7 @@ function PictureGrid(props) {
       width: props.width,
       maxWidth: props.maxWidth
     }
-  }, showGallaryView === false ? displayImage(props.images || props.children) != null && /*#__PURE__*/_react.default.createElement("div", null, displayImage(props.images || props.children)) : displayGallaryImage(props.images || props.children) != null && /*#__PURE__*/_react.default.createElement("div", null, displayGallaryImage(props.images || props.children)), showImage && /*#__PURE__*/_react.default.createElement(_material.Dialog
+  }, showGallaryView === false ? displayImage(props.images) != null && /*#__PURE__*/_react.default.createElement("div", null, displayImage(props.images)) : displayGallaryImage(props.images) != null && /*#__PURE__*/_react.default.createElement("div", null, displayGallaryImage(props.images)), showImage && /*#__PURE__*/_react.default.createElement(_material.Dialog
   // title={"POST"}
   , {
     scroll: "body",
