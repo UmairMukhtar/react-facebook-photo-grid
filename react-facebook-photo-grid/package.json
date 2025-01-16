@@ -27,8 +27,11 @@
     "react": "react"
   },
   "dependencies": {
-    "@material-ui/core": "^4.11.0",
-    "@material-ui/icons": "^4.9.1",
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@mui/icons-material": "^6.4.0",
+    "@mui/material": "^6.4.0",
+    "@mui/styles": "^6.4.0",
     "infinite-react-carousel": "^1.2.11"
   },
   "devDependencies": {

@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 
-import { makeStyles } from "@material-ui/core/styles";
-import { Grid, IconButton, Dialog, Paper } from "@material-ui/core";
-import Typography from "@material-ui/core/Typography";
-import CloseIcon from "@material-ui/icons/Close";
+import { makeStyles } from '@mui/styles';
+import {IconButton, Dialog,Paper , Typography} from "@mui/material"
+import Grid from '@mui/material/Grid2';
+import CloseIcon from "@mui/icons-material/Close";
 import Slider from "infinite-react-carousel";
 
 export default function PictureGrid(props) {
@@ -44,7 +44,7 @@ export default function PictureGrid(props) {
             {images.map((image) => {
               if (isAVideo(image)) {
                 return (
-                  <Grid item md={12} lg={12} xl={12} xs={12} sm={12}>
+                  <Grid size={12}>
                     <Grid
                       container
                       direction="row"
@@ -57,7 +57,7 @@ export default function PictureGrid(props) {
                 );
               }
               return (
-                <Grid item md={12} lg={12} xl={12} xs={12} sm={12}>
+                <Grid size={12}>
                   <div
                     container
                     direction="row"
@@ -148,7 +148,7 @@ export default function PictureGrid(props) {
               {images.map((image, index) => {
                 if (isAVideo(image)) {
                   return (
-                    <Grid item md={12} lg={12} xl={12} xs={12} sm={12}>
+                    <Grid size={12}>
                       <Grid container direction="row" justify="center">
                         <video width="100%" height="290" src={image} controls />
                       </Grid>
@@ -156,7 +156,7 @@ export default function PictureGrid(props) {
                   );
                 }
                 return (
-                  <Grid item md={12} lg={12} xl={12} xs={12} sm={12}>
+                  <Grid size={12}>
                     <Grid
                       container
                       direction="row"
@@ -185,7 +185,7 @@ export default function PictureGrid(props) {
             <Grid container spacing={1}>
               {images.map((image, index) => {
                 return (
-                  <Grid item md={6} lg={6} xl={6} xs={6} sm={6}>
+                  <Grid size={6}>
                     <Grid
                       container
                       direction="row"
@@ -213,7 +213,7 @@ export default function PictureGrid(props) {
       } else if (images.length === 3) {
         return (
           <Grid container spacing={1}>
-            <Grid item md={6} lg={6} xl={6} xs={6} sm={6}>
+            <Grid size={6}>
               <Grid
                 container
                 direction="row"
@@ -232,12 +232,12 @@ export default function PictureGrid(props) {
                 }}
               ></Grid>
             </Grid>{" "}
-            <Grid item md={6} lg={6} xl={6} xs={6} sm={6}>
+            <Grid size={6}>
               {images.map((image, index) => {
                 if (index != 0) {
                   if (isAVideo(image)) {
                     return (
-                      <Grid item md={12} lg={12} xl={12} xs={12} sm={12}>
+                      <Grid size={12}>
                         <Grid container direction="row" justify="center">
                           <video
                             width="100%"
@@ -279,7 +279,7 @@ export default function PictureGrid(props) {
       } else if (images.length === 4) {
         return (
           <Grid container spacing={1}>
-            <Grid item md={6} lg={6} xl={6} xs={6} sm={6}>
+            <Grid size={6}>
               <Grid
                 container
                 direction="row"
@@ -298,12 +298,12 @@ export default function PictureGrid(props) {
                 }}
               ></Grid>
             </Grid>{" "}
-            <Grid item md={6} lg={6} xl={6} xs={6} sm={6}>
+            <Grid size={6}>
               {images.map((image, index) => {
                 if (index != 0) {
                   if (isAVideo(image)) {
                     return (
-                      <Grid item md={12} lg={12} xl={12} xs={12} sm={12}>
+                      <Grid size={12}>
                         <Grid container direction="row" justify="center">
                           <video
                             width="100%"
@@ -343,7 +343,7 @@ export default function PictureGrid(props) {
       } else {
         return (
           <Grid container spacing={1}>
-            <Grid item md={6} lg={6} xl={6} xs={6} sm={6}>
+            <Grid size={6}>
               <Grid
                 container
                 direction="row"
@@ -362,14 +362,14 @@ export default function PictureGrid(props) {
                 }}
               ></Grid>
             </Grid>{" "}
-            <Grid item md={6} lg={6} xl={6} xs={6} sm={6}>
+            <Grid size={6}>
               <Grid container spacing={1}>
                 {images.map((image, index) => {
                   if (index != 0) {
                     if (index > 3 && images.length > 5) {
                       if (index === 4) {
                         return (
-                          <Grid item md={6} lg={6} xl={6} xs={6} sm={6}>
+                          <Grid size={6}>
                             <Grid
                               container
                               direction="row"
@@ -410,11 +410,7 @@ export default function PictureGrid(props) {
                             return (
                               <Grid
                                 item
-                                md={12}
-                                lg={12}
-                                xl={12}
-                                xs={12}
-                                sm={12}
+                                size={12}
                               >
                                 <Grid
                                   container
@@ -432,7 +428,7 @@ export default function PictureGrid(props) {
                             );
                           }
                           return (
-                            <Grid item md={12} lg={12} xl={12} xs={12} sm={12}>
+                            <Grid size={12}>
                               <Grid
                                 container
                                 direction="row"
@@ -455,7 +451,7 @@ export default function PictureGrid(props) {
                           );
                         }
                         return (
-                          <Grid item md={6} lg={6} xl={6} xs={6} sm={6}>
+                          <Grid size={6}>
                             <Grid
                               container
                               direction="row"
@@ -478,7 +474,7 @@ export default function PictureGrid(props) {
                         );
                       } else {
                         return (
-                          <Grid item md={6} lg={6} xl={6} xs={6} sm={6}>
+                          <Grid size={6}>
                             <Grid
                               container
                               direction="row"
